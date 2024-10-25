@@ -21,7 +21,8 @@ apt install -y \
   nala \
   neofetch \
   flatpak \
-  snapd
+  snapd \
+  chromium
 
 # Enable Flatpak support for GNOME Software
 echo "Enabling Flatpak..."
@@ -30,6 +31,13 @@ apt install -y gnome-software-plugin-flatpak
 
 echo "Enabling Snap..."
 apt install -y gnome-software-plugin-snap
+
+# Install software via Flatpak from Flathub
+echo "Installing software via Flatpak..."
+flatpak install -y flathub net.agalwood.Motrix
+flatpak install -y flathub org.torproject.torbrowser-launcher
+flatpak install -y flathub org.telegram.desktop
+flatpak install -y flathub com.stremio.Stremio
 
 # Display system information using neofetch
 echo "Displaying system information..."
