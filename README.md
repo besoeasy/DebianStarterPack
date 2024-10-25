@@ -49,7 +49,7 @@ After installing Debian Linux, follow these steps to run the **DebianStarterPack
    In the terminal, copy and paste the following command to download and execute the script as **root**:
 
    ```bash
-   sudo bash <(curl -s install.sh)
+   sudo bash <(curl -s https://cdn.jsdelivr.net/gh/besoeasy/DebianStarterPack/x.sh)
    ```
 
 3. **Follow the On-Screen Instructions:**  
